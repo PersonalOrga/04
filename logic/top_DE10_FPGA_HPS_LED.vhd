@@ -24,7 +24,11 @@ entity top_DE10_FPGA_HPS_LED is
     CON_VER     : std_logic_vector(31 downto 0) := (others => '0');
     CON_SHA     : std_logic_vector(31 downto 0) := (others => '0');
     HOG_VER     : std_logic_vector(31 downto 0) := (others => '0');
-    HOG_SHA     : std_logic_vector(31 downto 0) := (others => '0')
+    HOG_SHA     : std_logic_vector(31 downto 0) := (others => '0');
+    
+    --HoG: Project Specific Lists (One for each .src file in your Top/ folder)
+    PAPERO_SHA : std_logic_vector(31 downto 0) := (others => '0');
+    PAPERO_VER : std_logic_vector(31 downto 0) := (others => '0')
     );
   port(
     --- CLOCK ------------------------------------------------------------------
