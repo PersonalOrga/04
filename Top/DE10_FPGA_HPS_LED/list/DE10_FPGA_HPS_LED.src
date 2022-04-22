@@ -1,0 +1,24 @@
+#Top file: Hog searches for the top file with name format top_<project>.vhd
+logic/top_DE10_FPGA_HPS_LED.vhd
+
+
+#Packages
+logic/intel_package.vhd
+logic/basic_package.vhd
+
+
+#Project-specific files
+
+
+#Basic functions
+
+#Qsys IPs: regenerate the IP for each new build
+#Add the qip if you want to generate it only once
+ip/soc_system/soc_system.qsys noadd --synthesis=VHDL
+
+
+#Other IPs
+ip/edge_detect/altera_edge_detector.v
+ip/debounce/debounce.v
+ip/altsource_probe/hps_reset.qip
+

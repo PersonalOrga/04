@@ -1,0 +1,3 @@
+constraints/DE10_FPGA_HPS_LED.sdc
+constraints/DE10_FPGA_HPS_LED_pins.qsf
+constraints/DE10_FPGA_HPS_LED_properties.qsf
